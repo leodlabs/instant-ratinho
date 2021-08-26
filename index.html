@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RATINHO SOUNDBOARD</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/howler.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container launchpad rounded">
+      <div class="row">
+        <div class="col-lg-2 offset-lg-2 px-4">
+          <img src="img/connection.png" class="img-fluid" alt="RATINHO IS ON">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-9 outer bevelBox">
+            <div class="row justify-content-center px-4">
+                <div class="col-lg-12 ir-launchpad bevelBox">
+                    <div class="row splash bevelBox">
+                        <div class="col-lg-7">
+                            <img
+                            src="img/logo3.png"
+                            alt="INSTANT RATINHO LOGO"
+                            class="img-fluid"
+                            />
+                        </div>
+                        <div class="col-lg-5">
+                            <p style="float: right;"><a class="github-link" href="https://github.com/leodhb/instant-ratinho"><i class="fab fa-github"></i></a></p>
+                        </div>
+                      
+                    </div>
+                    <div class="row p-2 justify-content-center samplelist" id="sampleList"></div>
+                    <div class="row p-4 controls-footer bevelBox">
+                      <div class="col-lg-6">
+                        <div class="display bevelBox">
+                          <p class="sample-name-container">
+                            SAMPLE: <span id="sample-name">NONE</span>
+                          </p>
+                          <p class="sample-name-container">
+                            DURATION: <span id="sample-duration">0</span> seg
+                          </p>
+        
+                          <p class="sample-name-container">
+                            BGM: <span id="bgm-name">NONE</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+         
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

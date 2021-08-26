@@ -1,0 +1,128 @@
+body {
+  overflow-x: hidden;
+  background-color: #222;
+}
+
+.launchpad {
+  height: 100vh !important;
+  
+}
+.ir-launchpad {
+
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+  background-color: lightgrey;
+
+  -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+}
+
+.ir-controls {
+  background-color: navy;
+}
+
+.btn-squared-default {
+  width: 100% !important;
+  font-size: 30px;
+}
+
+.btn-squared-default:hover {
+  border: 3px solid white;
+  font-weight: 800;
+}
+
+.btn-ireplay {
+    margin: 0.5rem;
+    width: 4rem !important;
+    height: 4rem !important;
+    font-size: 20px;
+    background-color: #ddd;
+    box-shadow: inset 0 0 8px 8px rgba(0,0,0,0.2);;
+    border-radius: 10px;
+    border: none;
+    position: relative;
+    border-bottom: solid 5px #888;
+    border-right: solid 5px #888;
+}
+
+.btn-ireplay:active, .js-active-btn {
+    box-shadow: 0 0 50px 8px orange,  inset 0 0 4px 4px rgba(0,0,0,0.2);
+    background-color: #ffef66;
+
+    border-bottom: solid 2px #888;
+    border-right: solid 2px #888;
+}
+
+.small-desc {
+  font-size: 10px;
+  margin-top: -20px;
+  position: absolute;
+}
+
+.sample-description {
+  font-size: 10px;
+  color: black;
+  background-color: #aaa;
+  border-radius: 5px;
+  padding: 2px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.display {
+  background-color: black;
+  color:cyan;
+  width: 100%;
+  border-radius: 5px;
+  padding: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+}
+
+.splash {
+  padding: 1em;
+  background: url('../img/stbg.jpg');
+  background-size: cover;
+}
+.brand {
+  width: 70%;
+}
+
+.controls-footer {
+  background: url('../img/stbg.jpg');
+  background-size: cover;
+}
+
+.outer {
+  background: url(../img/mogno.jpg);
+  background-size: contain;
+  background-repeat: repeat;
+  box-shadow: 0 0 18px 18px rgba(0,0,0,0.4);
+
+  border-radius: 2em;
+}
+
+.bevelBox
+{
+    -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+}
+
+
+.samplelist {
+  background: url('../img/bmbg.jpg');
+  background-size: cover;
+}
+
+.github-link {
+  color: black;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.github-link:hover {
+  color: purple
+}
