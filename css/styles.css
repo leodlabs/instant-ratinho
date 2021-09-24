@@ -3,10 +3,24 @@ body {
   background-color: #222;
 }
 
-.launchpad {
-  height: 100vh !important;
-  
+.launchpad-container {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
+.launchpad-inner {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
 .ir-launchpad {
 
   border-left: solid 1px black;
@@ -83,16 +97,16 @@ body {
 
 .splash {
   padding: 1em;
-  background: url('../img/stbg.jpg');
-  background-size: cover;
+  background: url('../img/pane-red.png');
+  background-repeat: repeat;
 }
 .brand {
   width: 70%;
 }
 
 .controls-footer {
-  background: url('../img/stbg.jpg');
-  background-size: cover;
+  background: url('../img/pane-red.png');
+  background-repeat: repeat;
 }
 
 .outer {
