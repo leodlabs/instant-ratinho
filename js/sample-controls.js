@@ -26,7 +26,6 @@ export const playSong = (filename) => {
   }
 };
 
-
 export const resetSample = (sample) => {
   sample.channel.stop();
   sample.isBgm &&
