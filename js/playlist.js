@@ -28,6 +28,6 @@ export let playlist = [
     new Sample("( ͡° ͜ʖ ͡°)", "yamete", "KeyF", 2),
     new Sample("BGM COMERCIAL", "vinheta", "KeyZ", 0.5, true),
     new Sample("BGM CHAVES", "bgm2", "KeyX", 1, true),
-    new Sample("BGM BOA NOITE", "bgm3", "KeyC", 1, true),
+    new Sample("BGM BOA NOITE", "bgm3", "KeyC", 0.9, true),
     new Sample("BGM PEGADINHA", "bgm4", "KeyV", 1, true),
   ];
