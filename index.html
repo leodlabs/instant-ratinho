@@ -1,94 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RATINHO SOUNDBOARD</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/howler.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RATINHO SOUNDBOARD</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/vendor/howler.min.js"></script>
-  <link rel="stylesheet" href="css/styles.css" />
+    <!-- SEO / Google -->
+    <meta name="author" content="Author name here....">
+    <meta name="description" content="Description text here.....">
+    <link rel="canonical" href="URL here...">
 
-  <!-- SEO / Google -->
-  <meta name="author" content="Author name here....">
-  <meta name="description" content="Description text here.....">
-  <link rel="canonical" href="URL here...">
+    <!-- Social: Twitter -->
+    <!-- After inserting META need to validate at https://dev.twitter.com/docs/cards/validation/validator -->
+    <meta name="twitter:site" content="@leodsu">
+    <meta name="twitter:creator" content="leodsu">
+    <meta name="twitter:title" content="INSTANT RATINHO">
+    <meta name="twitter:description" content="Launchpad online com os efeitos e BGMs do programa do Ratinho">
+    <meta name="twitter:image:src" content="img/rapaz.jpg">
 
-  <!-- Social: Twitter -->
-  <!-- After inserting META need to validate at https://dev.twitter.com/docs/cards/validation/validator -->
-  <meta name="twitter:site" content="@leodsu">
-  <meta name="twitter:creator" content="leodsu">
-  <meta name="twitter:title" content="INSTANT RATINHO">
-  <meta name="twitter:description" content="Launchpad online com os efeitos e BGMs do programa do Ratinho">
-  <meta name="twitter:image:src" content="img/rapaz.jpg">
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="https://leodhb.github.io/instant-ratinho">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="launchpad">
+    <meta property="og:image" content="img/rapaz.jpg" />
+    <meta property="og:description" content="Launchpad online com os efeitos e BGMs do programa do Ratinho">
+    <meta property="og:site_name" content="INSTANT RATINHO">
+    <meta property="article:author" content="https://www.facebook.com/leodhb">
 
-  <!-- Social: Facebook / Open Graph -->
-  <meta property="og:url" content="https://leodhb.github.io/instant-ratinho">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="launchpad">
-  <meta property="og:image" content="img/rapaz.jpg" />
-  <meta property="og:description" content="Launchpad online com os efeitos e BGMs do programa do Ratinho">
-  <meta property="og:site_name" content="INSTANT RATINHO">
-  <meta property="article:author" content="https://www.facebook.com/leodhb">
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="INSTANT RATINHO">
+    <meta itemprop="description" content="Launchpad online com os efeitos e BGMs do programa do Ratinho">
+    <meta itemprop="image" content="img/rapaz.jpg">
 
-  <!-- Social: Google+ / Schema.org  -->
-  <meta itemprop="name" content="INSTANT RATINHO">
-  <meta itemprop="description" content="Launchpad online com os efeitos e BGMs do programa do Ratinho">
-  <meta itemprop="image" content="img/rapaz.jpg">
+  </head>
 
-</head>
-
-<body>
-  <div class="launchpad-container">
-    <div class="launchpad-inner">
-      
-  <div class="container rounded">
-    <div class="row justify-content-center">
-      <div class="col-lg-9 outer bevelBox">
-        <div class="row justify-content-center px-4">
-          <div class="col-lg-12 ir-launchpad bevelBox">
-            <div class="row splash bevelBox">
-              <div class="col-lg-7">
-                <img src="img/logo0.png" alt="INSTANT RATINHO LOGO" class="img-fluid" />
-              </div>
-              <div class="col-lg-5">
-                <p style="float: right;"><a class="btn btn-dark mt-2" target="_blank" href="https://github.com/leodhb/instant-ratinho"><i
-                      class="fab fa-github"></i> Ver código-fonte</a></p>
-              </div>
-
-            </div>
-            <div class="row p-2 justify-content-center samplelist" id="sampleList"></div>
-            <div class="row p-4 controls-footer bevelBox">
-              <div class="col-lg-6">
-                <div class="display bevelBox">
-                  <p class="sample-name-container">
-                    SAMPLE: <span id="sample-name">NONE</span>
-                  </p>
-                  <p class="sample-name-container">
-                    DURATION: <span id="sample-duration">0</span> seg
-                  </p>
-
-                  <p class="sample-name-container">
-                    BGM: <span id="bgm-name">NONE</span>
-                  </p>
+  <body>
+    <div class="launchpad-container">
+      <div class="launchpad-inner">
+        <div class="container rounded">
+          <div class="row justify-content-center">
+            <main class="col-lg-9 outer bevelBox">
+              <div class="row justify-content-center px-4">
+                <div class="col-lg-12 ir-launchpad bevelBox">
+                  <header class="row splash bevelBox">
+                    <div class="col-lg-7">
+                      <img src="img/logo0.png" alt="INSTANT RATINHO LOGO" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-5">
+                      <p style="float: right;"><a class="btn btn-dark mt-2" target="_blank" href="https://github.com/leodhb/instant-ratinho">
+                        <i class="fab fa-github"></i> Ver código-fonte</a>
+                      </p>
+                    </div>
+                  </header>
+                  <section class="row p-2 justify-content-center samplelist" id="sampleList"></section>
+                  <footer class="row p-4 controls-footer bevelBox">
+                    <div class="col-lg-6">
+                      <div class="display bevelBox">
+                        <p class="sample-name-container">
+                          SAMPLE: 
+                          <span id="sample-name">NONE</span>
+                        </p>
+                        <p class="sample-name-container">
+                          DURATION: 
+                          <span id="sample-duration">0</span> seg
+                        </p>
+                        <p class="sample-name-container">
+                          BGM: 
+                          <span id="bgm-name">NONE</span>
+                        </p>
+                      </div>
+                    </div>
+                  </footer>
                 </div>
               </div>
-            </div>
+            </main>
           </div>
         </div>
-
       </div>
     </div>
-  </div>
-  
-</div>
-</div>
-  <script type="module" src="js/main.js"></script>
-</body>
-
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
